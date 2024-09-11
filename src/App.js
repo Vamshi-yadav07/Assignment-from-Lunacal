@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import TabsWidget from "./TabsWidget";
+import Gallery from "./CauroselTab";
+import "./App.css"; // Assuming you're using external CSS for styling
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="sample-card"></div>
+      <div className="='main-card">
+        <TabsWidget />
+        <hr className="horizontal-line" />
+        <Gallery />
+        <hr className="horizontal-line" />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

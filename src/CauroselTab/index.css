@@ -1,0 +1,142 @@
+/* General Container */
+.gallery-container {
+  background-color: #2f2f2f;
+  color: white;
+  height: 260px;
+  width: 100%;
+  max-width: 621px;
+  background: #363c43;
+  box-shadow: 5.67px 5.67px 3.78px 0px #00000066;
+  padding: 12px;
+
+  border-radius: 30px;
+  display: flex;
+
+  gap: 10px;
+  flex-direction: row;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.gallery-title {
+  font-size: 24px;
+  background: #171717;
+  padding: 10px 12px;
+  margin: 0px;
+  border-radius: 7px;
+  margin-right: 20%;
+  box-shadow: 0px 4px 10px 2px #00000040 inset;
+}
+
+/* Add Image Button */
+.add-image-btn {
+  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+  padding: 10px 1px;
+  border-radius: 30px;
+  padding-left: 10px;
+  color: white;
+  background: #ffffff08;
+  box-shadow: 0px 3.26px 3.26px 0px #ffffff26 inset;
+  box-shadow: 0px 0px 48.91px 0px #ffffff0d inset;
+  box-shadow: 9px 10px 7.1px 0px #00000066;
+  box-shadow: -0.5px -0.5px 6.9px 0px #ffffff40;
+}
+
+.add-image-btn input {
+  display: none;
+}
+
+.add-image-btn span {
+  color: #fff;
+  width: 110px;
+  font-size: 14px;
+  height: auto;
+  font-weight: bold;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel-container {
+  display: flex;
+  margin-top: 20px;
+  overflow: hidden; 
+  width: 570px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, Opera */
+}
+
+.carousel-item {
+  margin: 6px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+  filter: grayscale(0);
+}
+.carousel-item:hover {
+  transform: rotate(3deg);
+}
+
+.courosel-head-card {
+  padding: 0px;
+  width: 600px;
+}
+
+.no-images-text {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.arrow-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.right-button,
+.left-button {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
+  box-shadow: 4px 5px 30px 5px #101213;
+  box-shadow: -5px -3px 30px -10px #96bee7;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
